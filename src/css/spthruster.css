@@ -1,7 +1,9 @@
 .img1 {
     position: absolute;
-    width: 1206px;
-    height: 761px;
+    /*width: 1206px; */
+    width: auto;
+    /* height: 761px; */
+    height: auto;
     left: 54px;
     top: 339px;
 }
@@ -9,7 +11,8 @@
 .img2 {
     position: absolute;
     width: 1009px;
-    height: 466px;
+    /* height: 466px; */
+    height: auto;
     left: 1301px;
     top: 339px;
 }

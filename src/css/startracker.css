@@ -1,9 +1,15 @@
+/*COMMENT OUT = OG*/
 .img1 {
-    position: absolute;
+    /*position: absolute;
     width: 1667px;
     height: 1035px;
     left: 284px;
-    top: 257px;
+    top: 257px; */
+    position: absolute;
+    width: auto;
+    height: 1035px;
+    left: 184px;
+    top: 257px; /* for some reason the width/height isnt changing the image?? go back to this */
 }
 
 .text1 {
