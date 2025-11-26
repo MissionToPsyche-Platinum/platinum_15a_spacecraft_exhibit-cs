@@ -22,7 +22,7 @@
     top: 237px;
 }
 
-.text1 {
+.text1 { /* Rightmost text */
     position: absolute;
     width: 379px;
     height: 994px;
@@ -46,10 +46,12 @@
 
 .text2 {
     position: absolute;
-    width: 589px;
+    /* width: 589px; */
+    width: 750px;
     height: 311px;
     left: 671px;
-    top: 861px;
+    /* top: 861px; */
+    top: 885px;
 
     /* P */
     font-family: 'Arial';
