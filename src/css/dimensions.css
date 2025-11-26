@@ -18,7 +18,8 @@
     position: absolute;
     width: 379px;
     height: 243px;
-    left: 542px;
+    /*left: 542px; */
+    left: 450px;
     top: 961px;
 
     /* P */
@@ -40,7 +41,8 @@
     position: absolute;
     width: 380px;
     height: 125px;
-    left: 883px;
+    /*left: 883px; */
+    left: 900px;
     top: 1041px;
 
     /* P */
@@ -62,7 +64,8 @@
     position: absolute;
     width: 374px;
     height: 243px;
-    left: 1389px;
+    /*left: 1389px; */
+    left: 1320px;
     top: 962px;
 
     /* P */
