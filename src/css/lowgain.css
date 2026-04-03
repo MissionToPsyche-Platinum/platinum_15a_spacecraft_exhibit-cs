@@ -1,8 +1,8 @@
 .img1 { 
     position: absolute;
     /*width: 1670px;*/
-    max-width: 1100px;
-    height: auto;
+    width: auto;
+    height: 1035px;
     /*left: 247px; */
     left: 147px;
     top: 203px;
@@ -22,8 +22,8 @@ p {
     position: absolute;
     width: 379px;
     height: 994px;
-    left: 1436px;
-    top: 500px;
+    left: 1936px;
+    top: 218px;
 
     /* P */
 
