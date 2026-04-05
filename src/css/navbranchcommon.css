@@ -38,7 +38,10 @@
     font-style: normal;
     font-weight: 700;
         font-size: 0.75rem; /* 24px */
-    line-height: 68px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 

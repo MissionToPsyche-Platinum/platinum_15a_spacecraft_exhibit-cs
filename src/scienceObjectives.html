@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sciencebranchcommon.css">
-    <link rel="stylesheet" href="css/scienceobjective.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/lowgain.css">
+    <title>Science Objectives — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -19,11 +19,12 @@
             width: 1911px;
         }
     </style>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="100" height="100" fill="url(#pattern0)" />
@@ -34,7 +35,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Science Objectives
@@ -60,6 +61,7 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
     <a href="science.html">
         <div class="back">
             <div class="svg">
@@ -78,43 +80,38 @@
             </div>
         </div>
     </a>
-    <img class="img1" src="imgs/ScienceObjective_ship.png" alt="">
-    <img class="img2" src="imgs/ScienceObjective_JH.png" alt="">
-    <p1>
-        1)  Understand a previously unexplored building blocks of planet formation: iron cores.<br>
-        2)  Look inside terrestrial planets, including Earth, by directly examining the interior of a differentiated body, which otherwise could not be seen.<br>
-        3)  Explore a new type of world. For the first time, examine a world made not of rock and ice, but metal. 
-    </p1>
-    <p2>
-        Engineers at Johns Hopkins Applied Physics Laboratory working on the Gamma Ray and Neutron Spectrometers.
-    </p2>
+    <img style="width: 60%; height: 65vh;margin-top: 8%;margin-left: 10%;" src="imgs/scienceobjectives.png" alt="Diagram of the four Psyche science objectives: topography, gravity, magnetism, and composition">
     <!-- <p class="text1">
         The three low gain antennas will be used for ground communications and the gravity science investigation. The Psyche mission will use the X-band radio telecommunications system to measure Psyche's gravity field to high precision. When combined with topography derived from onboard imagery, this will provide information on the interior structure of Psyche. The team is based at Massachusetts Institute of Technology and the Jet Propulsion Laboratory.
     </p> -->
-    <button type="button" class="buttonMag" id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2)>
+    <nav role="navigation" aria-label="Science section navigation">
+    <button type="button" class="buttonMag" id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2) aria-label="Magnetometer">
         Magnetometer
     </button>
 
     <button type="button" class="buttonGam" id='Gamma Ray and Neutron Spectrometer' value="gamma.html"
-        onclick=buttonLog(id,value,3)>
+        onclick=buttonLog(id,value,3) aria-label="Gamma Ray and Neutron Spectrometer">
         Gamma Ray and <br> Neutron Spectrometer
     </button>
 
-    <button type="button" class="buttonMul" id='Multispectral' value="multispectral.html" onclick=buttonLog(id,value,5)>
+    <button type="button" class="buttonMul" id='Multispectral' value="multispectral.html" onclick=buttonLog(id,value,5) aria-label="Multispectral Imagers">
         Multispectral Imagers
     </button>
 
     <button type="button" class="buttonLow" id='Low Gain Antenna' value="lowgainantenna.html"
-        onclick=buttonLog(id,value,6)>
+        onclick=buttonLog(id,value,6) aria-label="Low Gain Antenna">
         Low Gain Antenna
     </button>
 
     <button type="button" class="buttonObj" id='Science Objective' value="scienceObjectives.html"
-        onclick=buttonLog(id,value,5)>
+        onclick=buttonLog(id,value,5) aria-label="Science Objectives">
         Science Objectives
     </button>
+    </nav>
 
 
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

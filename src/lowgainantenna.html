@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sciencebranchcommon.css">
     <link rel="stylesheet" href="css/lowgain.css">
-    <title>Document</title>
+    <title>Low Gain Antenna — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -19,11 +19,12 @@
             width: 1911px;
         }
     </style>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="100" height="100" fill="url(#pattern0)" />
@@ -34,7 +35,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Low Gain Antenna
@@ -60,6 +61,7 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
     <a href="science.html">
         <div class="back">
             <div class="svg">
@@ -78,35 +80,38 @@
             </div>
         </div>
     </a>
-    <img class="img1" src="imgs/LGA.png" alt="">
-    <!-- <img class="img2" src="imgs/antenna_rl.png" alt=""> -->
+    <img class="img1" src="imgs/LGA.png" alt="Low gain antenna mounted on the Psyche spacecraft">
     <p>
         The three low gain antennas will be used for ground communications and the gravity science investigation.
     </p>
-    <button type="button" class="buttonMag" id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2)>
+    <nav role="navigation" aria-label="Science section navigation">
+    <button type="button" class="buttonMag" id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2) aria-label="Magnetometer">
         Magnetometer
     </button>
 
     <button type="button" class="buttonGam" id='Gamma Ray and Neutron Spectrometer' value="gamma.html"
-        onclick=buttonLog(id,value,3)>
+        onclick=buttonLog(id,value,3) aria-label="Gamma Ray and Neutron Spectrometer">
         Gamma Ray and <br> Neutron Spectrometer
     </button>
 
-    <button type="button" class="buttonMul" id='Multispectral' value="multispectral.html" onclick=buttonLog(id,value,5)>
+    <button type="button" class="buttonMul" id='Multispectral' value="multispectral.html" onclick=buttonLog(id,value,5) aria-label="Multispectral Imagers">
         Multispectral Imagers
     </button>
 
     <button type="button" class="buttonLow" id='Low Gain Antenna' value="lowgainantenna.html"
-        onclick=buttonLog(id,value,6)>
+        onclick=buttonLog(id,value,6) aria-label="Low Gain Antenna">
         Low Gain Antenna
     </button>
 
     <button type="button" class="buttonObj" id='Science Objective' value="scienceObjectives.html"
-        onclick=buttonLog(id,value,5)>
+        onclick=buttonLog(id,value,5) aria-label="Science Objectives">
         Science Objectives
     </button>
+    </nav>
 
 
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

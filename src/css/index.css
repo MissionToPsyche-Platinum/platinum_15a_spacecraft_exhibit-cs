@@ -51,12 +51,61 @@ button {
     transform: rotate(90deg);
 }
 
+.mission-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2560px;
+    height: 178px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--base-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 125px; /* px — immune to a11y font scale */
+    color: #5c2851;
+    margin: 0;
+}
+
+.text1 {
+    position: absolute;
+    left: 260px;
+    top: 178px;
+    width: 725px;
+    height: 1262px;
+    border-radius: 30px;
+    padding: 60px 50px;
+    box-sizing: border-box;
+
+    font-family: var(--base-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.005em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* At scaled font sizes, anchor text to the top so the beginning is always
+   visible. overflow-y: auto is injected by accessibility.css for .text1. */
+body.a11y-scaled .text1 {
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+}
+
 .science {
     position: absolute;
     width: 725px;
     height: 613px;
-    left: 260px;
-    top: 89px;
+    left: 1025px;
+    top: 178px;
 
     /* green */
     background: linear-gradient(178.81deg, #40FF00 -0.99%, #17D613 98.98%);
@@ -67,8 +116,8 @@ button {
     position: absolute;
     width: 724px;
     height: 613px;
-    left: 1025px;
-    top: 89px;
+    left: 1789px;
+    top: 178px;
 
     background: linear-gradient(180deg, #00FFFF 0%, #00D9EA 42.63%, #00B6D6 100%);
     border-radius: 30px;
@@ -79,7 +128,7 @@ button {
     width: 724px;
     height: 613px;
     left: 1789px;
-    top: 89px;
+    top: 178px;
 
     /* purple */
     background: linear-gradient(180deg, #D99AFF 0%, #CF80FF 24.48%, #C05AFF 100%);
@@ -90,8 +139,8 @@ button {
     position: absolute;
     width: 725px;
     height: 613px;
-    left: 260px;
-    top: 738px;
+    left: 1025px;
+    top: 827px;
 
     background: linear-gradient(180deg, #FFC801 0%, #FFA601 39.51%);
     border-radius: 30px;
@@ -101,21 +150,19 @@ button {
     position: absolute;
     width: 724px;
     height: 613px;
-    left: 1025px;
-    top: 738px;
+    left: 1789px;
+    top: 827px;
 
-    background: linear-gradient(180deg, #D99AFF 0%, #CF80FF 24.48%, #C05AFF 100%);
+    background: linear-gradient(180deg, #EF5965 0%, #E64B54 47.32%, #D32F33 100%);
     border-radius: 30px;
 }
-
-/* How to make red: #EF5965 0%, #E64B54 47.32%, #D32F33 */
 
 .model {
     position: absolute;
     width: 724px;
     height: 613px;
     left: 1789px;
-    top: 738px;
+    top: 827px;
 
     /* purple */
     background: linear-gradient(180deg, #D99AFF 0%, #CF80FF 24.48%, #C05AFF 100%);
@@ -171,9 +218,7 @@ button {
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
-
-    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.18);
+    color: #000000;
 }
 
 .science .hd {

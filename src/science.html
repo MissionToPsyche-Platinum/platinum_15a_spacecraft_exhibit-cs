@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/science.css">
-    <title>Document</title>
+    <title>Science — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <style>
 
     </style>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="98" height="98" fill="url(#pattern0)" />
                 <defs>
@@ -29,7 +30,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Science
@@ -55,6 +56,7 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
 
     <div class="bg">
         <svg width="1301" height="1265" viewBox="0 0 1301 1265" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,30 +66,34 @@
         </svg>
     </div>
 
+    <nav role="navigation" aria-label="Science section navigation">
     <button type="button" class="magn" style="background: url(imgs/Magnetometer.png) no-repeat; width: 800px;"
-        id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2)>
+        id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2) aria-label="Magnetometer">
         <div class="hd">Magnetometer</div>
     </button>
 
     <button type="button" class="gamma" style="background: url(imgs/Neutronspectrometer.png) no-repeat; width: 800px;"
-        id='Gamma Ray and Neutron Spectrometer' value="gamma.html" onclick=buttonLog(id,value,3)>
+        id='Gamma Ray and Neutron Spectrometer' value="gamma.html" onclick=buttonLog(id,value,3) aria-label="Gamma Ray and Neutron Spectrometer">
         <div class="hd">Gamma Ray and Neutron Spectrometer</div>
     </button>
 
     <button type="button" class="mul" id='Multispectral'
         style="background: url(imgs/MultispectralImagers.png) no-repeat; width: 800px;" value="multispectral.html"
-        onclick=buttonLog(id,value,5)>
+        onclick=buttonLog(id,value,5) aria-label="Multispectral Imagers">
         <div class="hd">Multispectral Imagers</div>
     </button>
 
-    <button type="button" class="low" id='Low Gain Antenna' value="lowgainantenna.html" onclick=buttonLog(id,value,6)>
-        <div class="hd">Low Gain Antenna (CHANGE BACKGROUND)</div>
+    <button type="button" class="low" id='Low Gain Antenna' value="lowgainantenna.html" onclick=buttonLog(id,value,6) aria-label="Low Gain Antenna">
+        <div class="hd">Low Gain Antenna</div>
     </button>
 
-    <button type="button" class="low" style="margin-top: 385px;margin-left: 30vh;" id='Science Objective' value="scienceObjectives.html" onclick=buttonLog(id,value,7)>
-        <div class="hd">Science Objective (CHANGE BACKGROUND)</div>
+    <button type="button" class="low" style="margin-top: 385px;margin-left: 30vh;" id='Science Objective' value="scienceObjectives.html" onclick=buttonLog(id,value,7) aria-label="Science Objectives">
+        <div class="hd">Science Objective</div>
     </button>
+    </nav>
 
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

@@ -17,46 +17,31 @@
 
 .text1 {
     position: absolute;
-    width: 580px;
+    width: 599px;           /* extended from 380px — right edge aligned to 2540px */
+    padding-right: 5%;
+    box-sizing: border-box;
     height: 823px;
     left: 1841px;
     top: 360px;
 
-    /* P */
-
     font-family: var(--base-font-family);
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem; /* follows global base font-size */
-    line-height: 1.21875rem; /* 39px */
-    /* or 195% */
+    font-size: 1rem;
+    line-height: 1.21875rem; /* rem-based — matches magnetometer gold standard */
 
     display: flex;
     align-items: center;
     letter-spacing: 0.005em;
 
     color: #000000;
+    overflow: hidden;
 }
 
-.text2 {
-    position: absolute;
-    width: 500px;
-    height: 823px;
-    left: 180px;;
-    top: 610px;
-
-    /* P */
-
-    font-family: var(--base-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem; /* follows global base font-size */
-    line-height: 1.21875rem; /* 39px */
-    /* or 195% */
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.005em;
-
-    color: #000000;
+/* At scaled font sizes, anchor text to top so the beginning is never clipped;
+   overflow-y: auto injected by accessibility.css for .text1 under body.a11y-scaled */
+body.a11y-scaled .text1 {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 0.5rem;
 }

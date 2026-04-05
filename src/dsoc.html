@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/combranchcommon.css">
     <link rel="stylesheet" href="css/dosc.css">
-    <title>Document</title>
+    <title>DSOC Assembly — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -19,11 +19,12 @@
             width: 1911px;
         }
     </style>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="98" height="98" fill="url(#pattern0)" />
@@ -34,7 +35,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Deep Space Optical Communication (DSOC) Assembly
@@ -60,15 +61,16 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
     <div class="content">
         <div class="img1">
-            <img src="imgs/DSOC1.png" alt="">
+            <img src="imgs/DSOC1.png" alt="Deep Space Optical Communications (DSOC) laser transceiver">
         </div>
         <div class="img2">
-            <img src="imgs/DSOC2.png" alt="">
+            <img src="imgs/DSOC2.png" alt="DSOC photon-counting detector and telescope assembly">
         </div>
         <div class="img3">
-            <img src="imgs/DSOC3.png" alt="">
+            <img src="imgs/DSOC3.png" alt="DSOC flight laser transceiver installed on the spacecraft">
         </div>
         <p class="text1">The Psyche mission will test a sophisticated new laser communication technology that encodes
             data in photons (rather than radio waves) to communicate between a probe in deep space and Earth. Using
@@ -93,12 +95,16 @@
             </div>
         </div>
     </a>
-    <button type="button" class="buttonXBand" id="Xband" value="xband.html" onclick=buttonLog(id,value,8)>
-        X-Band Antenna
+    <nav role="navigation" aria-label="Communication section navigation">
+    <button type="button" class="buttonXBand" id="Xband" value="xband.html" onclick=buttonLog(id,value,8) aria-label="X-Band Radio">
+        X-Band
     </button>
-    <button type="button" class="buttonDSOC" id="Dsoc" value="dsoc.html" onclick=buttonLog(id,value,9)>
+    <button type="button" class="buttonDSOC" id="Dsoc" value="dsoc.html" onclick=buttonLog(id,value,9) aria-label="Deep Space Optical Communications">
         DSOC
     </button>
+    </nav>
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

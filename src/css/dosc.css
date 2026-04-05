@@ -24,23 +24,29 @@
 
 .text1 {
     position: absolute;
-    width: 586px;
-    height: 292px;
+    width: 700px;
+    padding-right: 5%;
+    box-sizing: border-box;
+    height: 450px;          /* extended from 292px — bottom at 1205px, 65px before buttons at 1270 */
     left: 1933px;
-    /*top: 774px; */
     top: 805px;
 
-    /* P */
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 39px;
+    line-height: 1.21875rem; /* rem-based — matches magnetometer gold standard */
 
-    /* or 195% */
     display: flex;
     align-items: center;
     letter-spacing: 0.005em;
 
     color: #000000;
+    overflow: hidden;
+}
+
+body.a11y-scaled .text1 {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 0.5rem;
 }

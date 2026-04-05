@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/spacecraftbranchcommon.css">
     <link rel="stylesheet" href="css/funfacts.css">
-    <title>Document</title>
+    <title>Fun Facts — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -19,11 +19,12 @@
             width: 1911px;
         }
     </style>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="98" height="98" fill="url(#pattern0)" />
@@ -34,7 +35,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Fun Facts
@@ -60,20 +61,16 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
     <div class="content">
         <div class="img1">
-            <img src="imgs/funfacts 1.png" alt="">
+            <img src="imgs/funfacts 1.png" alt="Infographic with key facts about the Psyche mission timeline and objectives">
         </div>
 
-        <p class="text1">Flight Time: 3.4 years</br>
-            NASA's 14th Mission</br>
-            Mission Cost: $850 million</br>
-            Propulsion System: The spacecraft will be propelled by solar electric propulsion.</br></br>
-            Mission Events <br>
-            2022 - Launch of Psyche spacecraft from Kennedy Space Center, Florida</br>
-            2023 - Mars Flyby of Psyche spacecraft</br>
-            2026 - Psyche spacecraft arrives in asteroid's orbit</br>
-            2026-2027 - Psyche spacecraft orbits the 16 Psyche asteroid (between Mars and Jupiter)
+        <p class="text1">
+            The Psyche spacecraft launched on October 13, 2023 aboard a SpaceX Falcon Heavy rocked from NASA’s Kennedy Space Center.<br><br>
+            In May 2026 it flies past Mars for a gravity assist, increasing its speed and setting its trajectory to the Psyche asteroid.<br><br>
+            The spacecraft arrives at the Psyche asteroid in mid-2029 and begins a 26-month primary mission, performing science operations from four different orbits, each successively closer to the asteroid.
         </p>
         <div class="dot" style="top: 464px;"></div>
         <div class="dot" style="top: 503px;"></div>
@@ -104,17 +101,21 @@
         </div>
     </a>
 
-    <button type="button" class="buttonCC" id='Central Core' value="centralCore.html" onclick=buttonLog(id,value,15)>
+    <nav role="navigation" aria-label="Spacecraft section navigation">
+    <button type="button" class="buttonCC" id='Central Core' value="centralCore.html" onclick=buttonLog(id,value,15) aria-label="Central Core">
         Central Core
     </button>
 
-    <button type="button" class="buttonDim" id='Dimensions' value="dimensions.html" onclick=buttonLog(id,value,15)>
+    <button type="button" class="buttonDim" id='Dimensions' value="dimensions.html" onclick=buttonLog(id,value,15) aria-label="Dimensions">
         Dimensions
     </button>
 
-    <button type="button" class="buttonFun" id='Fun Facts' value="funFacts.html" onclick=buttonLog(id,value,15)>
+    <button type="button" class="buttonFun" id='Fun Facts' value="funFacts.html" onclick=buttonLog(id,value,15) aria-label="Fun Facts">
         Fun Facts
     </button>
+    </nav>
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

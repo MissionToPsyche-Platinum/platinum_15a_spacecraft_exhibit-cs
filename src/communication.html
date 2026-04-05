@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/communication.css">
-    <title>Document</title>
+    <title>Communication — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="98" height="98" fill="url(#pattern0)" />
@@ -27,7 +28,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Communication
@@ -53,6 +54,7 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
 
     <div class="bg">
         <svg width="1170" height="1429" viewBox="0 0 1170 1429" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,15 +71,19 @@
 
     </div>
 
-    <button type="button" class="XBand" id='Xband' value="xband.html" onclick=buttonLog(id,value,8)>
+    <nav role="navigation" aria-label="Communication section navigation">
+    <button type="button" class="XBand" id='Xband' value="xband.html" onclick=buttonLog(id,value,8) aria-label="X-Band Radio">
         <div class="hd">X-Band High Gain Antenna</div>
     </button>
 
     <button type="button" class="DSOC" id='Dsoc' value="dsoc.html"
-        style="background: url(imgs/DSOC.png) no-repeat; width: 1001.8px;" onclick=buttonLog(id,value,9)>
+        style="background: url(imgs/DSOC.png) no-repeat; width: 1001.8px;" onclick=buttonLog(id,value,9) aria-label="Deep Space Optical Communications">
         <div class="hd">DSOC Assembly</div>
     </button>
+    </nav>
 
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

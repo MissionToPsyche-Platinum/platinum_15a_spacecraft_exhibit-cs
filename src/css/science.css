@@ -68,14 +68,14 @@
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .magn .hd {
     position: absolute;
     width: 584px;
     height: 77px;
-    left: 195px;
+    left: 160px;
     top: 125px;
 }
 
@@ -97,9 +97,9 @@
 
 .low .hd {
     position: absolute;
-    width: 600px;
+    width: 800px;
     height: 77px;
-    left: 150px;
+    left: 100px;
     top: 125px;
 }
 
@@ -107,6 +107,6 @@
     position: absolute;
     width: 700px;
     height: 77px;
-    left: 90px;
+    left: 50px;
     top: 125px;
 }

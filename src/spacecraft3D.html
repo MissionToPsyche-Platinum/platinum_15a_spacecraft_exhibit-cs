@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/video.css">
-    <title>Document</title>
+    <title>Spacecraft 3D Model — Psyche Mission Exhibit</title>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 <style>
     body {
@@ -34,8 +35,8 @@
 </script>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="69" height="69" fill="url(#pattern0)" />
@@ -47,7 +48,7 @@
                 </defs>
             </svg>
 
-        </div>
+        </a>
 
         <div class="text">
             Spacecraft 3D model
@@ -75,6 +76,7 @@
         </a>
 
     </div>
+    <main id="main-content">
     <div class='modelo-wrapper' style="padding-top: 118px;">
         <div style="width: 100%; padding-bottom: 1315px; position:
         relative">
@@ -82,10 +84,12 @@
                     src="
         https://app.modelo.io/embedded/1480775104903405568?viewport=false&autoplay=true&autorotate=false&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false&c_at0=12.661898612976074&c_at1=29.419547080993652&c_at2=18.87346649169922&c_theta=-0.7853981633974483&c_phi=0.17453292519943295&c_dis=643.6901055905332"
                     style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
-                    allowfullscreen></iframe> </div>
+                    title="Interactive 3D model of the Psyche spacecraft" allowfullscreen></iframe> </div>
         </div>
         <div class='cover'></div>
     </div>
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

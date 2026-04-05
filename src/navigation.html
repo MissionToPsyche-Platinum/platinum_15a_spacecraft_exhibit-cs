@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/navigation.css">
-    <title>Document</title>
+    <title>Navigation — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="98" height="98" fill="url(#pattern0)" />
                 <defs>
@@ -26,7 +27,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Navigation
@@ -52,6 +53,7 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
     <div class="bg">
         <svg width="1320" height="1344" viewBox="0 0 1320 1344" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_211_1021)">
@@ -74,22 +76,26 @@
 
     </div>
 
-    <button type="button" class="Cold" id='Cold Gas Thrusters' style="background: url(imgs/ColdGasThrusters.png) no-repeat; width: 800px;" value="coldGasTruster.html" onclick=buttonLog(id,value,11)>
+    <nav role="navigation" aria-label="Navigation section navigation">
+    <button type="button" class="Cold" id='Cold Gas Thrusters' style="background: url(imgs/ColdGasThrusters.png) no-repeat; width: 800px;" value="coldGasTruster.html" onclick=buttonLog(id,value,11) aria-label="Cold Gas Thrusters">
         <div class="hd">Cold Gas Thrusters</div>
     </button>
 
-    <button type="button" class="Star" id='Star Trackers' value="starTrackers.html" onclick=buttonLog(id,value,12)>
+    <button type="button" class="Star" id='Star Trackers' value="starTrackers.html" onclick=buttonLog(id,value,12) aria-label="Star Trackers">
         <div class="hd">Star Trackers</div>
     </button>
 
-    <button type="button" class="Sun" id='Sun Sensors' value="SunSensors.html" onclick=buttonLog(id,value,13)>
-        <div class="hd">Sun Sensors (CHANGE BACKGROUND)</div>
+    <button type="button" class="Sun" id='Sun Sensors' value="SunSensors.html" onclick=buttonLog(id,value,13) aria-label="Sun Sensors">
+        <div class="hd">Sun Sensors</div>
     </button>
 
-    <button type="button" class="SP" id='SP Thruster' value="SPThruster.html" onclick=buttonLog(id,value,14)>
-        <div class="hd">SP Thruster (CHANGE BACKGROUND)</div>
+    <button type="button" class="SP" id='SP Thruster' value="SPThruster.html" onclick=buttonLog(id,value,14) aria-label="SP Thruster">
+        <div class="hd">SP Thruster</div>
     </button>
+    </nav>
 
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

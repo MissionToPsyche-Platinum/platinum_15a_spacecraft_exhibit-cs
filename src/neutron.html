@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/sciencebranchcommon.css">
     <link rel="stylesheet" href="css/neutron.css">
-    <title>Document</title>
+    <title>Neutron Spectrometer — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -19,11 +19,12 @@
             width: 1911px;
         }
     </style>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="100" height="100" fill="url(#pattern0)" />
@@ -34,7 +35,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Neutron Spectrometer
@@ -60,6 +61,7 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
     <a href="science.html">
         <div class="back">
             <div class="svg">
@@ -75,34 +77,39 @@
     </a>
     
     <div class="img">
-    <img src="imgs/neutronspectrometerInner.png" alt="">
+    <img src="imgs/neutronspectrometerInner.png" alt="Interior view of the neutron spectrometer showing helium-3 detection cylinders">
     </div>
     <p class="text1">
         Neutrons provide information about particular elements like iron, nickel and hydrogen that complement the gamma-ray measurements. The Neutron Spectrometer uses three cylinders to capture neutrons with three specialized detectors called helium-3 sensors which detect different energy ranges of neutrons to reveal distinct information about asteroid Psyche’s composition.
     </p>
     <p class="text2">
      The Psyche neutron spectrometer uses three cylinders filled with a gas of helium-3, an isotope of helium that will rapidly grab free neutrons emitted by asteroid Psyche. Credit: Johns Hopkins APL/Ed Whitman
-    <button type="button" class="buttonMag" id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2)>
+    </p>
+    <nav role="navigation" aria-label="Science section navigation">
+    <button type="button" class="buttonMag" id='Magnetometer' value="magnetometer.html" onclick=buttonLog(id,value,2) aria-label="Magnetometer">
         Magnetometer
     </button>
 
-    <button type="button" class="buttonGam" id='Gamma' value="gamma.html" onclick=buttonLog(id,value,3)>
+    <button type="button" class="buttonGam" id='Gamma' value="gamma.html" onclick=buttonLog(id,value,3) aria-label="Gamma Ray and Neutron Spectrometer">
         Gamma Ray
     </button>
 
-    <button type="button" class="buttonNeu" id='Neutron' value="neutron.html" onclick=buttonLog(id,value,4)>
+    <button type="button" class="buttonNeu" id='Neutron' value="neutron.html" onclick=buttonLog(id,value,4) aria-label="Neutron Spectrometer">
         Neutron Spectrometer
     </button>
 
-    <button type="button" class="buttonMul" id='Multispectral' value="multispectral.html" onclick=buttonLog(id,value,5)>
+    <button type="button" class="buttonMul" id='Multispectral' value="multispectral.html" onclick=buttonLog(id,value,5) aria-label="Multispectral Imagers">
         Multispectral Imagers
     </button>
 
     <button type="button" class="buttonLow" id='Low Gain Antenna' value="lowgainantenna.html"
-        onclick=buttonLog(id,value,6)>
+        onclick=buttonLog(id,value,6) aria-label="Low Gain Antenna">
         Low Gain Antenna
     </button>
+    </nav>
 
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

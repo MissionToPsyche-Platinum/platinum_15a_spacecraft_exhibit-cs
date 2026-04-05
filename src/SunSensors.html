@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/navbranchcommon.css">
     <link rel="stylesheet" href="css/sunsensor.css">
-    <title>Document</title>
+    <title>Sun Sensors — Psyche Mission Exhibit</title>
     <script src="scripts/dataWhenClick.js">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -19,11 +19,12 @@
             width: 1911px;
         }
     </style>
+    <link rel="stylesheet" href="accessibility/accessibility.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <div class="header" role="banner">
+        <a class="logo" href="index.html" aria-label="Home — Psyche Mission Exhibit">
             <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="98" height="98" fill="url(#pattern0)" />
@@ -34,7 +35,7 @@
                     <image id="image0_211_1338" width="1420" height="1420" href="imgs/Psyche-Logo.png"/>
                 </defs>
             </svg>
-        </div>
+        </a>
 
         <div class="text">
             Sun Sensors
@@ -60,6 +61,7 @@
             </div>
         </a>
     </div>
+    <main id="main-content">
 
     <a href="navigation.html">
         <div class="back">
@@ -80,28 +82,34 @@
         </div>
     </a>
 
-    <img class="img1" src="imgs/sun sensor.png" alt="">
+    <div class="img1">
+        <img src="imgs/sun sensor.png" alt="Sun sensor used for spacecraft attitude determination">
+    </div>
     <p class="text1">Sun sensors are inexpensive, low mass, and simple attitude sensors that are used on many spacecraft
         to provide knowledge of the Sun’s orientation.</p>
 
+    <nav role="navigation" aria-label="Navigation section navigation">
     <button type="button" class="buttonCGT" id='Cold Gas Thrusters' value="coldGasTruster.html"
-        onclick=buttonLog(id,value,11)>
+        onclick=buttonLog(id,value,11) aria-label="Cold Gas Thrusters">
         Cold Gas Thruster
     </button>
 
     <button type="button" class="buttonStar" id='Star Trackers' value="starTrackers.html"
-        onclick=buttonLog(id,value,12)>
+        onclick=buttonLog(id,value,12) aria-label="Star Trackers">
         Star Trackers
     </button>
 
-    <button type="button" class="buttonSun" id='Sun Sensors' value="SunSensors.html" onclick=buttonLog(id,value,13)>
+    <button type="button" class="buttonSun" id='Sun Sensors' value="SunSensors.html" onclick=buttonLog(id,value,13) aria-label="Sun Sensors">
         Sun Sensors
     </button>
 
-    <button type="button" class="buttonSP" id='SP Thruster' value="SPThruster.html" onclick=buttonLog(id,value,14)>
+    <button type="button" class="buttonSP" id='SP Thruster' value="SPThruster.html" onclick=buttonLog(id,value,14) aria-label="SP Thruster">
         SP Thruster
     </button>
+    </nav>
 
+    </main>
+    <script src="accessibility/accessibility.js"></script>
 </body>
 
 </html>

@@ -16,24 +16,35 @@
 
 .text1 {
     position: absolute;
-    /*width: 591px; */
-    width: 750px;
+    /* Extends from img2 left (1509px) to last button right (2540px).
+       padding-right: 5% supplies the minimum 5% inset the design requires. */
+    width: 1031px;
+    padding-right: 5%;
+    box-sizing: border-box;
     height: 333px;
     left: 1509px;
-    /*top: 781px; */
     top: 825px;
 
-    /* P */
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 39px;
+    line-height: 1.21875rem; /* rem-based so it scales with font — matches magnetometer gold standard */
 
-    /* or 195% */
     display: flex;
     align-items: center;
     letter-spacing: 0.005em;
-
     color: #000000;
+
+    overflow: hidden;
+}
+
+/* At scaled font sizes, anchor text to top (prevent top-clip), expand height to
+   fill available space before the buttons row, and allow vertical scroll.
+   Available space: top (825px) to buttons (1270px) = 445px; 420px leaves a margin. */
+body.a11y-scaled .text1 {
+    align-items: flex-start;
+    height: 420px;
+    overflow-y: auto;
+    padding-top: 0.5rem;
 }
