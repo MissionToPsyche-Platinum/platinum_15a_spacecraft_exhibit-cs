@@ -1,32 +1,17 @@
-async function buttonLog(id, value, buttonPressed) {
-    // alert(id)
-    date = new Date()
-
+function buttonLog(id, value, buttonPressed) {
+    // Fire analytics as fire-and-forget (do not block navigation)
+    var date = new Date();
     $.ajax({
-        async: false,
+        async: true,
         type: "POST",
         url: "saveData.php",
         data: { "name": id, "date": date },
-        //dataType: "json",
-        success: function(msg) {
-            // alert("success")
-            // alert(msg)
-            window.location.href = value;
-
-        },
-        error: function(msg) {
-            alert("error");
-        },
-
-
     });
 
-
-    url = 'http://WIZnetD9E9F9.istb4.dhcp.asu.edu/' + buttonPressed;
+    var url = 'http://WIZnetD9E9F9.istb4.dhcp.asu.edu/' + buttonPressed;
     console.log(url);
-    fetch(url, { method: 'POST', mode: 'no-cors' })
-        .then(data => console.log(data));
+    fetch(url, { method: 'POST', mode: 'no-cors' }).catch(function() {});
 
-    return true;
-
+    // Navigate immediately using local relative path
+    window.location.href = value;
 }
