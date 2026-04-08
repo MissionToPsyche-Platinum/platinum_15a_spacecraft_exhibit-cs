@@ -92,13 +92,10 @@ body.a11y-cvd main > p {
 }
 
 .a11y-settings-btn .a11y-gear-icon {
-  position: absolute;
-  bottom: 42px;
-  width: 103px;
-  height: 103px;
-  font-size: 150px;    /* px keeps icon fixed regardless of font scale */
-  z-index: 1000;
-  display: block;      /* removes inline text metrics that cause the ⚙ glyph to appear off-centre */
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 /* "Settings" label hidden — icon-only button */
@@ -133,13 +130,10 @@ body.a11y-cvd main > p {
 }
 
 .a11y-settings-btn-float .a11y-gear-icon {
-  position: absolute;
-  bottom: 42px;
-  width: 103px;
-  height: 103px;
-  font-size: 150px;    /* px keeps icon fixed regardless of font scale */
-  z-index: 1000;
-  display: block;      /* removes inline text metrics that cause the ⚙ glyph to appear off-centre */
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 /* "Settings" label hidden — icon-only button */

@@ -17,6 +17,8 @@
 .text1 {
     position: absolute;
     width: 379px;
+    padding: 0.75rem;
+    box-sizing: border-box;
     height: 243px;
     left: 450px;
     top: 961px;
@@ -29,6 +31,7 @@
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
@@ -38,6 +41,8 @@
 .text2 {
     position: absolute;
     width: 380px;
+    padding: 0.75rem;
+    box-sizing: border-box;
     height: 243px;
     left: 900px;
     top: 961px;
@@ -50,6 +55,7 @@
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
@@ -59,6 +65,8 @@
 .text3 {
     position: absolute;
     width: 374px;
+    padding: 0.75rem;
+    box-sizing: border-box;
     height: 243px;
     left: 1320px;
     top: 961px;
@@ -71,6 +79,7 @@
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
@@ -80,6 +89,8 @@
 .text4 {
     position: absolute;
     width: 400px;
+    padding: 0.75rem;
+    box-sizing: border-box;
     height: 243px;
     left: 1716px;
     top: 961px;
@@ -92,20 +103,28 @@
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
     overflow: hidden;
 }
 
+/* Active page indicator — grey out this page's own button */
+.buttonDim {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
+}
+
 /* Medium & Large: reposition text boxes around the images */
 
 /* Text 1 — left of left image, 5% (~96px) gap from left border and image */
 body.a11y-scaled .text1 {
-    left: 96px;
-    width: 300px;
-    top: 307px;
-    height: 960px;
+    left: 76px;
+    width: 365px;
+    top: 205px;
+    height: 835px;
     align-items: flex-start;
     overflow-y: auto;
     padding-top: 0.35rem;
@@ -139,10 +158,10 @@ body.a11y-scaled .text3 {
 
 /* Text 4 — right of right image, 5% (~96px) gap from image and right border */
 body.a11y-scaled .text4 {
-    left: 2196px;
+    left: 2180px;
     width: 370px;
-    top: 289px;
-    height: 960px;
+    top: 205px;
+    height: 1045px;
     align-items: flex-start;
     overflow-y: auto;
     padding-top: 0.35rem;

@@ -16,27 +16,30 @@
 
 .img3 {
     position: absolute;
-    width: 600px;
-    height: 800px;
+    width: 450px;
+    height: 600px;
     left: 1515px;
     top: 237px;
 }
 
 .text1 { /* Gamma ray — rightmost column, beside img3 */
     position: absolute;
-    width: 379px;
-    height: 994px;
-    left: 2145px;
-    top: 218px;
+    width: 475px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 594px;
+    left: 2045px;
+    top: 450px;
 
     font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.21875rem; /* rem-based so it scales with font — matches magnetometer gold standard */
+    line-height: 1.21875rem;
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
     color: #000000;
 
@@ -45,25 +48,40 @@
 
 .text2 { /* Neutron spectrometer — below img1 and img2 */
     position: absolute;
-    width: 750px;
-    height: 360px; /* was 311 — increased to contain text at 1× without clipping top/bottom */
-    left: 671px;
-    top: 885px;    /* bottom: 885+360=1245; buttons at 1270 — 25px clearance */
+    width: 1800px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 260px;
+    left: 100px;
+    top: 885px;
 
     font-family: 'Arial';
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.21875rem; /* rem-based — matches gold standard */
+    line-height: 1.21875rem;
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
     color: #000000;
 
     overflow: hidden;
 }
 
+body.a11y-scaled .text1 {
+    height: 1000px;
+    top: 235px;
+    left: 2045px;
+}
+
+/* Active page indicator — grey out this page's own button */
+.buttonGam {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
+}
 /* At scaled font sizes, anchor text to top so the beginning is never clipped.
    overflow-y: auto is already injected by accessibility.css for .text1/.text2. */
 body.a11y-scaled .text1,
@@ -78,5 +96,6 @@ body.a11y-scaled .text2 {
    Right edge stays at original 1421px (671 + 750): new width = 1421 - 96 = 1325px. */
 body.a11y-scaled .text2 {
     left: 96px;
-    width: 1325px;
+    width: 1825px;
+    height: 350px;
 }

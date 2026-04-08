@@ -21,22 +21,50 @@
 p {
     position: absolute;
     width: 500px;
-    height: 994px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 275px;
     left: 1936px;
-    top: 218px;
-
-    /* P */
+    top: 550px;
 
     font-family: var(--base-font-family);
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem; /* follows global base font-size */
-    line-height: 1.21875rem; /* 39px */
-    /* or 195% */
+    font-size: 1rem;
+    line-height: 1.21875rem;
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
+}
+
+/* Active page indicator — grey out this page's own button */
+.buttonLow {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
+}
+
+body.a11y-scaled p {
+    position: absolute;
+    width: 650px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 650px;
+    left: 1875px;
+    top: 375px;
+
+    font-family: var(--base-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21875rem;
+
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.005em;
+    align-items: flex-start;
 }

@@ -3,44 +3,26 @@
     width: 1182px;
     height: 708px;    /* preserves 985×554 source ratio */
     left: 41px;
-    top: 295px;
+    top: 250px;
 }
 
 .img2 {
     position: absolute;
-    width: 640px;
-    height: 427px;    /* preserves 3:2 source ratio */
-    left: 1250px;
-    top: 295px;
-}
-
-/* Caption below img2 */
-p2 {
-    position: absolute;
-    width: 640px;
-    height: 210px;
-    left: 1250px;
-    top: 737px;        /* 295 + 427 + 15px gap */
-
-    font-family: var(--base-font-family);
-    font-style: italic;
-    font-weight: 400;
-    font-size: 0.75rem;
-    line-height: 1.1rem;
-
-    color: #000000;
-    overflow: hidden;
+    width: auto;
+    height: 708px;    /* preserves 3:2 source ratio */
+    left: 1450px;
+    top: 250px;
 }
 
 /* Objectives text — right column */
 p {
     position: absolute;
-    width: 625px;
-    padding-right: 5%;
+    width: 1575px;
+    padding: 0.75rem;
     box-sizing: border-box;
-    height: 815px;
-    left: 1925px;
-    top: 295px;
+    height: 200px;
+    left: 41px;
+    top: 995px;
 
     font-family: var(--base-font-family);
     font-style: normal;
@@ -50,15 +32,83 @@ p {
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
     color: #000000;
 
     overflow: hidden;
 }
 
+/* Caption below img2 */
+p2 {
+    position: absolute;
+    width: 675px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 115px;
+    left: 1840px;
+    top: 995px;
+
+    font-family: var(--base-font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+
+    text-align: center;
+    color: #000000;
+    overflow: hidden;
+}
+
+/* Active page indicator — grey out this page's own button */
+.buttonObj {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
+}
+
 /* At scaled font sizes, anchor text to the top so the beginning is always
    visible, then let the box scroll vertically for any overflow. */
 body.a11y-scaled p {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 0.5rem;
+
+    position: absolute;
+    width: 1575px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 250px;
+    left: 41px;
+    top: 995px;
+
+    font-family: var(--base-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21875rem;
+
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.005em;
+}
+
+body.a11y-scaled p2 {
+    position: absolute;
+    width: 750px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 250px;
+    left: 1765px;
+    top: 995px;
+
+    font-family: var(--base-font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+
+    text-align: center;
     align-items: flex-start;
     overflow-y: auto;
     padding-top: 0.5rem;

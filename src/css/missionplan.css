@@ -9,19 +9,21 @@
 
 .img2 {
     position: absolute;
-    width: 799px;
+    width: 750px;
     height: auto;
     left: 1361px;
-    top: 531px;
+    top: 570px;
     overflow: hidden;
 }
 
 .text1 {
     position: absolute;
     width: 1469px;
+    padding: 0.75rem;
+    box-sizing: border-box;
     height: auto;
     left: 980px;
-    top: 237px;
+    top: 200px;
 
     font-family: var(--base-font-family);
     font-style: normal;
@@ -31,6 +33,7 @@
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
@@ -40,6 +43,8 @@
 .text2 {
     position: absolute;
     width: 2039px;
+    padding: 0.75rem;
+    box-sizing: border-box;
     height: auto;
     left: 121px;
     top: 1006px;
@@ -52,10 +57,18 @@
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
     overflow: hidden;
+}
+
+/* Active page indicator — grey out this page's own button */
+.buttonMis {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
 }
 /* Medium & Large: reposition text boxes around the images */
 
@@ -79,23 +92,26 @@
 
 /* Text 1 — left of left image, 5% (~96px) gap from left border and image */
 body.a11y-scaled .text1 {
-    left: 96px;
-    width: 300px;
-    top: 307px;
-    height: 960px;
+    position: absolute;
+    width: 1469px;
+    padding: 0.75rem;
+    height: 325px;
+    left: 980px;
+    top: 237px;
+    display: flex;
     align-items: flex-start;
     overflow-y: auto;
-    padding-top: 0.35rem;
+    padding-top: 0.5rem;
 }
 
 /* Text 2 — under left image, same width as image (799px), 5% internal padding */
 body.a11y-scaled .text2 {
-    left: 461px;
-    width: 799px;
-    top: 966px;
-    height: 275px;
-    padding: 0 40px;
+    width: 2039px;
+    padding: 0.75rem;
     box-sizing: border-box;
+    left: 121px;
+    top: 1006px;
+    height: 250px;
     align-items: flex-start;
     overflow-y: auto;
     padding-top: 0.5rem;

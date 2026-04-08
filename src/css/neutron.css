@@ -15,21 +15,49 @@ img {
 .text1 {
     position: absolute;
     width: 580px;
+    padding: 0.75rem;
+    box-sizing: border-box;
     height: 813px;
     left: 1721px;
     top: 314px;
 
-    /* P */
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 39px;
 
-    /* or 195% */
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
+}
+
+.text2 {
+    position: absolute;
+    width: 580px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 200px;
+    left: 1721px;
+    top: 1010px;
+
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+
+    text-align: center;
+    color: #000000;
+    overflow: hidden;
+}
+
+/* Active page indicator — grey out this page's own button */
+.buttonNeu {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
 }

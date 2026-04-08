@@ -4,5 +4,4 @@
 !.vscode/extensions.json
 .vscode/*
 /docs/*
-./claude/*
-CLAUDE.md
+statistical_summary.csv

@@ -60,7 +60,7 @@
     btn.setAttribute('aria-expanded', 'false');
     btn.setAttribute('aria-controls', PANEL_ID);
     btn.innerHTML =
-      '<span class="a11y-gear-icon" aria-hidden="true">&#9881;</span>' +
+      '<img class="a11y-gear-icon" src="imgs/settings_gear.png" alt="" aria-hidden="true">' +
       '<span class="a11y-settings-label">Settings</span>';
     btn.addEventListener('click', openPanel);
 

@@ -58,7 +58,7 @@ fwrite($file,"Button Name,,,Clicks\n");
                 $magnetometer+=1;
           }
 
-    $gamma_data = "SELECT * FROM `data_save` WHERE `button` LIKE 'Gamma Ray and Neutron Spectrometer' ORDER BY `button` DESC";
+    $gamma_data = "SELECT * FROM `data_save` WHERE `button` LIKE 'Gamma-Ray and Neutron Spectrometer' ORDER BY `button` DESC";
     $Gamma=$link->query($gamma_data);
         while(mysqli_fetch_array($Gamma)){
                 $gamma+=1;
@@ -183,7 +183,7 @@ fwrite($file,"Button Name,,,Clicks\n");
 
 fwrite($file, "Science(Section),,,".$science."\n");
 fwrite($file, "Magnetometer,,,".$magnetometer."\n");
-fwrite($file, "'Gamma Ray and Neutron Spectrometer',,,".$gamma."\n");
+fwrite($file, "'Gamma-Ray and Neutron Spectrometer',,,".$gamma."\n");
 fwrite($file, "Low Gain Antenna,,,".$low_gain_antenna."\n");
 fwrite($file, "Multispectral,,,".$multispectral."\n");
 fwrite($file, "Navigation(Section),,,".$navigation."\n");

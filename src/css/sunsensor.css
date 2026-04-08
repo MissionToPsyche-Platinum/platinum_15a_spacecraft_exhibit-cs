@@ -2,31 +2,39 @@
     position: absolute;
     width: 1670px;
     height: 1035px;
-    left: 153px;
+    left: 103px;
     top: 205px;
 }
 
 .text1 {
     position: absolute;
-    width: 700px;           /* extended from 380px — right edge aligned to 2540px */
-    padding-right: 5%;
+    width: 350px;
+    padding: 0.75rem;
     box-sizing: border-box;
-    height: 823px;
-    left: 1840px;
-    top: 360px;
+    height: 400px;
+    left: 2075px;
+    top: 490px;
 
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.21875rem; /* rem-based — matches magnetometer gold standard */
+    line-height: 1.21875rem;
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
     overflow: hidden;
+}
+
+/* Active page indicator — grey out this page's own button */
+.buttonSun {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
 }
 
 /* At scaled font sizes, anchor text to top so the beginning is never clipped;
@@ -35,4 +43,21 @@ body.a11y-scaled .text1 {
     align-items: flex-start;
     overflow-y: auto;
     padding-top: 0.5rem;
+    position: absolute;
+    width: 700px;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    height: 723px;
+    left: 1840px;
+    top: 360px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21875rem;
+
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.005em;
 }

@@ -8,8 +8,8 @@
 
 .text1 {
     position: absolute;
-    width: 819px;           /* extended from 379px — right edge 2540px, uses full available space */
-    padding-right: 5%;
+    width: 819px;
+    padding: 0.75rem;
     box-sizing: border-box;
     height: 620px;
     left: 1421px;
@@ -19,14 +19,22 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.21875rem; /* rem-based — matches magnetometer gold standard */
+    line-height: 1.21875rem;
 
     display: flex;
     align-items: center;
+    text-align: center;
     letter-spacing: 0.005em;
 
     color: #000000;
     overflow: hidden;
+}
+
+/* Active page indicator — grey out this page's own button */
+.buttonFun {
+    background: #c8c8c8;
+    color: #000000;
+    cursor: default;
 }
 
 /* Medium & Large: stretch text box from image right edge to page border with 10% padding */
@@ -41,6 +49,7 @@ body.a11y-scaled .text1 {
     align-items: flex-start;
     overflow-y: auto;
     padding-top: 0.2rem;
+    text-align: center;
 }
 
 .dot {

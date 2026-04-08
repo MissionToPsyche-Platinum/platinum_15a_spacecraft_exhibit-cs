@@ -52,17 +52,14 @@
     font-weight: 700;
     font-size: 1.875rem; /* 60px */
     line-height: 70px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.18);
+    display: flex;  
+    color: #000000;
 }
 
 .Cold .hd {
     position: absolute;
-    width: 799px;
+    color: #FFFFFF;
+    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.18);
     height: 522px;
     left: 80px;
     top: 0px;
@@ -89,5 +86,15 @@
     width: 799px;
     height: 522px;
     left: 200px;
+
+    height: 522px;
+    left: 200px;
     top: 0px;
+}
+
+.SP .hd {
+    position: absolute;
+    width: 799px;
+    height: 522px;
+    left: 225px;
 }
