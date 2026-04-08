@@ -53,13 +53,14 @@
     font-size: 1.875rem; /* 60px */
     line-height: 70px;
     display: flex;  
-    color: #000000;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.18);
 }
 
 .Cold .hd {
     position: absolute;
-    color: #FFFFFF;
-    text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.18);
     height: 522px;
     left: 80px;
     top: 0px;

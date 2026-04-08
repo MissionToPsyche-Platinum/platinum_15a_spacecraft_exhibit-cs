@@ -1,10 +1,24 @@
 /*COMMENT OUT = OG*/
 .img1 {
     position: absolute;
-    max-width: 1100px;
+    max-width: 900px;
     height: auto;
     left: 100px;
-    top: 207px; /* for some reason the width/height isnt changing the image?? go back to this */
+    top: 207px;
+}
+.img2 {
+    position: absolute;
+    max-width: 1100px;
+    height: auto;
+    left: 1000px;
+    top: 257px; 
+}
+
+.img1 img,
+.img2 img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .text1 {

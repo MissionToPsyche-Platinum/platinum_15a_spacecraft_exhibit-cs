@@ -1,14 +1,14 @@
 .img1 {
     position: absolute;
-    width: 800px;
+    width: 900px;
     height: auto;
-    left: 160px;
-    top: 230px;
+    left: 60px;
+    top: 200px;
 }
 
 .img2 {
     position: absolute;
-    width: 800px;
+    width: 750px;
     height: auto;
     left: 964px;
     top: 250px;
@@ -19,7 +19,7 @@
     width: 900px;
     height: auto;
     left: 560px;
-    top: 730px;
+    top: 760px;
 }
 
 .img1 img,

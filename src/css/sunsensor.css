@@ -1,9 +1,24 @@
 .img1 {
     position: absolute;
-    width: 1670px;
-    height: 1035px;
-    left: 103px;
+    width: 900px;
+    height: auto;
+    left: 161px;
     top: 205px;
+}
+
+.img2 {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    left: 1050px;
+    top: 656px;
+}
+
+.img1 img,
+.img2 img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .text1 {
@@ -59,5 +74,5 @@ body.a11y-scaled .text1 {
 
     display: flex;
     text-align: center;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.005em; 
 }
