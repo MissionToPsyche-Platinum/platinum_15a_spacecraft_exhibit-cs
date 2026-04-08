@@ -1,0 +1,102 @@
+.img1 {
+    position: absolute;
+    width: 839px;
+    height: 689px;
+    left: 121px;
+    top: 237px;
+    overflow: hidden;
+}
+
+.img2 {
+    position: absolute;
+    width: 799px;
+    height: auto;
+    left: 1361px;
+    top: 531px;
+    overflow: hidden;
+}
+
+.text1 {
+    position: absolute;
+    width: 1469px;
+    height: auto;
+    left: 980px;
+    top: 237px;
+
+    font-family: var(--base-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21875rem;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    color: #000000;
+    overflow: hidden;
+}
+
+.text2 {
+    position: absolute;
+    width: 2039px;
+    height: auto;
+    left: 121px;
+    top: 1006px;
+
+    font-family: var(--base-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21875rem;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    color: #000000;
+    overflow: hidden;
+}
+/* Medium & Large: reposition text boxes around the images */
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img2 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+/* Text 1 — left of left image, 5% (~96px) gap from left border and image */
+body.a11y-scaled .text1 {
+    left: 96px;
+    width: 300px;
+    top: 307px;
+    height: 960px;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 0.35rem;
+}
+
+/* Text 2 — under left image, same width as image (799px), 5% internal padding */
+body.a11y-scaled .text2 {
+    left: 461px;
+    width: 799px;
+    top: 966px;
+    height: 275px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 0.5rem;
+}

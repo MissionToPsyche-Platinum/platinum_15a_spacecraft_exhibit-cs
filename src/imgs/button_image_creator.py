@@ -24,7 +24,7 @@ def hex_to_rgb(hex_color: str):
         raise ValueError("Color must be a 6-digit hex value like FF0000")
     return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
 
-def apply_color_overlay(input_path, output_path, color_rgb, opacity=0.92):
+def apply_color_overlay(input_path, output_path, color_rgb, opacity=0.95):
     img = cv2.imread(str(input_path))
     if img is None:
         raise FileNotFoundError(input_path)
@@ -50,5 +50,5 @@ if not input_path.is_absolute():
 
 output_path = (folder / output_name).resolve()
 rgb = hex_to_rgb(color_input)
-apply_color_overlay(input_path, output_path, rgb, opacity=0.92)
+apply_color_overlay(input_path, output_path, rgb, opacity=0.95)
 print(f"Created: {output_path}")

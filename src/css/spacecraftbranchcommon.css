@@ -22,8 +22,9 @@
     color: #000000;
 }
 
-.buttonCC,
+.buttonMis,
 .buttonDim,
+.buttonCC,
 .buttonFun,
 .buttonMat {
     position: absolute;
@@ -45,19 +46,24 @@
     text-align: center;
 }
 
-.buttonCC {
+.buttonMis {
     position: absolute;
     left: 461px;
 }
 
 .buttonDim {
     position: absolute;
-    left: 882px;
+    left: 882px; 
+}
+
+.buttonCC {
+    position: absolute;
+    left: 1301px; 
 }
 
 .buttonFun {
     position: absolute;
-    left: 1301px;
+    left: 1721px;
 }
 
 .buttonMat {

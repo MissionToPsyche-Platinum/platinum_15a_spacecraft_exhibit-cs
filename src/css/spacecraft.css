@@ -2,12 +2,12 @@
     margin-top: 1px;
 }
 
-.Cen {
+.Mis {
     position: absolute;
     width: 799px;
-    height: 522px;
-    left: 41px;
-    top: 459px;
+    height: 525px;
+    left: 461px;
+    top: 267px;
 
     background: #D44242;
     border-radius: 30px;
@@ -17,8 +17,19 @@
     position: absolute;
     width: 799px;
     height: 525px;
-    left: 881px;
-    top: 459px;
+    left: 1301px;
+    top: 267px;
+
+    background: #D44242;
+    border-radius: 30px;
+}
+
+.Cen {
+    position: absolute;
+    width: 799px;
+    height: 525px;
+    left: 461px;
+    top: 825px;
 
     background: #D44242;
     border-radius: 30px;
@@ -28,8 +39,8 @@
     position: absolute;
     width: 799px;
     height: 525px;
-    left: 1721px;
-    top: 459px;
+    left: 1301px;
+    top: 825px;
 
     background: #D44242;
     border-radius: 30px;
@@ -51,7 +62,7 @@
     text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.18);
 }
 
-.Cen .hd {
+.Mis .hd {
     position: absolute;
     left: 195px;
     top: 0px;
@@ -60,6 +71,12 @@
 .Dim .hd {
     position: absolute;
     left: 220px;
+    top: 0px;
+}
+
+.Cen .hd {
+    position: absolute;
+    left: 195px;
     top: 0px;
 }
 
