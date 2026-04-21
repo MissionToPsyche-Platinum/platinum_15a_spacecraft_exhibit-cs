@@ -71,7 +71,6 @@ Serve the `src/` directory from your web server root. Navigate to `src/index.htm
 ```
 15A_Spacecraft_Exhibit/
 ├── README.md
-├── CLAUDE.md                        # Development agent instructions
 ├── src/
 │   ├── index.html                   # Home/landing page
 │   ├── science.html                 # Science branch hub
