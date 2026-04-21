@@ -1,51 +1,112 @@
 # Psyche 15A Spacecraft Exhibit
 
-An interactive web-based exhibit for the ASU/NASA Psyche Mission, providing an immersive exploration of the full-scale Psyche spacecraft and its components.
+An interactive web-based exhibit for the ASU/NASA Psyche Mission, providing an immersive touchscreen experience for museum visitors exploring the full-scale Psyche spacecraft and its scientific instruments.
 
-## Overview
+---
 
-This project modernizes the Psyche spacecraft exhibit through an interactive touchscreen interface that allows visitors to explore different aspects of the mission and spacecraft systems.
+## Deployment Environment
+
+| Property | Value |
+|----------|-------|
+| Hardware | Windows PC, fixed 1920×1080 display, exhibit kiosk |
+| Input | Touchscreen only |
+| Browser | Microsoft Edge on Windows |
+| Network | Local ASU campus network |
+
+---
 
 ## Features
 
-- **Science Instruments** - Explore the spacecraft's scientific payload
-- **Communication Systems** - Learn about X-band and Deep Space Optical Communications
-- **Navigation** - Understand guidance systems including star trackers and sun sensors
-- **Spacecraft Bus** - Examine thrusters, power systems, and structural components
-- **3D Visualization** - Interactive 3D models of spacecraft components
-- **Video Content** - Mission overview and educational videos
-- **Analytics** - User interaction tracking for exhibit optimization
+- **Science Instruments** — Magnetometer, Gamma-Ray & Neutron Spectrometer, Multispectral Imager, Science Objectives
+- **Communication Systems** — X-band radio, Deep Space Optical Communications (DSOC)
+- **Navigation** — Star Trackers, Sun Sensors, Cold Gas Thrusters, Hall-Effect Thrusters
+- **Spacecraft Bus** — Central Core, Dimensions, Fun Facts, Mission Plan, Materials
+- **3D Visualization** — Interactive 3D models of spacecraft and the asteroid 16 Psyche
+- **Analytics** — User interaction logging via PHP backend
+
+---
 
 ## Technology Stack
 
-- HTML5/CSS3 for structure and styling
-- Vanilla JavaScript with jQuery for interactivity
-- PHP backend for data collection and analytics
-- SVG graphics for high-quality visual elements
+| Layer | Technology |
+|-------|------------|
+| Structure | HTML5, semantic landmarks, WAI-ARIA 1.2 |
+| Styling | CSS3, CSS custom properties |
+| Interactivity | Vanilla JavaScript, jQuery |
+| Accessibility module | `src/accessibility/accessibility.css` + `src/accessibility/accessibility.js` |
+| Backend | PHP (data collection and analytics) |
+| Graphics | SVG, PNG assets |
+
+---
 
 ## Getting Started
 
-1. Clone the repository
-2. Serve the `src` directory using a web server with PHP support
-3. Navigate to `index.html` to launch the exhibit
+### Prerequisites
+
+- A web server with PHP support for local development
+- Microsoft Edge (deployed) or any modern browser (development)
+
+### Running Locally
+
+```bash
+git clone <repository-url>
+cd 15A_Spacecraft_Exhibit
+```
+
+Serve the `src/` directory from your web server root. Navigate to `src/index.html` to launch the exhibit.
+
+**PHP must be enabled** for analytics (`saveData.php`, `download.php`) to function.
+
+### Kiosk Deployment
+
+1. Copy the `src/` directory to the Windows PC serving the exhibit.
+2. Configure Edge to open `index.html` in kiosk/full-screen mode.
+3. Ensure the analytics endpoint is reachable on the local ASU network.
+4. Verify touchscreen input is correctly mapped.
+
+---
 
 ## Project Structure
 
 ```
-src/
-├── index.html              # Main landing page
-├── *.html                  # Individual component pages
-├── css/                    # Stylesheets
-├── scripts/                # JavaScript functionality
-├── imgs/                   # Image assets
-└── *.php                   # Data handling backend
+15A_Spacecraft_Exhibit/
+├── README.md
+├── CLAUDE.md                        # Development agent instructions
+├── src/
+│   ├── index.html                   # Home/landing page
+│   ├── science.html                 # Science branch hub
+│   ├── navigation.html              # Navigation branch hub
+│   ├── communication.html           # Communication branch hub
+│   ├── spacecraft.html              # Spacecraft branch hub
+│   ├── [component].html             # 20 individual component pages
+│   ├── spacecraft3D.html            # 3D spacecraft viewer
+│   ├── astroid3D.html               # 3D asteroid viewer
+│   ├── download_data.html           # Analytics download page
+│   ├── css/
+│   │   ├── common.css               # Shared base styles
+│   │   ├── index.css                # Home page styles
+│   │   ├── *branchcommon.css        # Per-branch button styles
+│   │   └── [component].css          # Per-page styles
+│   ├── accessibility/
+│   │   ├── accessibility.css        # Accessibility layer (font scale, high contrast)
+│   │   └── accessibility.js         # Settings panel, font scaling, contrast toggle
+│   ├── scripts/
+│   │   └── analytics.js             # User interaction tracking
+│   ├── imgs/                        # Image assets
+│   ├── saveData.php                 # Analytics write endpoint
+│   └── download.php                 # Analytics export endpoint
 ```
 
-## Credits
+---
 
-### Contributors
+## Contributors
+
 - Yash Mulimani
 - Kyle Knowles
 - Bharath Gowda
 - Chase Bulkin
 - Ian Zweig
+
+---
+
+*Developed for the ASU/NASA Psyche Mission Exhibit — Spring 2026*
