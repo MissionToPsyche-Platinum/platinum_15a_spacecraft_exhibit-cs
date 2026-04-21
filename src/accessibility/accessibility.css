@@ -394,7 +394,9 @@ button:not([class*="a11y-"]) {
 
 /* Spacecraft + navigation branch sub-buttons are 0.75rem (24px) */
 button.buttonCC, button.buttonDim, button.buttonFun, button.buttonMat,
-button.buttonCGT, button.buttonStar, button.buttonSun, button.buttonSP {
+button.buttonCGT, button.buttonStar, button.buttonSun, button.buttonHE, 
+button.buttonMag, button.buttonLow, button.buttonGam, button.buttonMul, button.buttonObj,
+button.buttonXBand, button.buttonDSOC, button.buttonMis {
   font-size: calc(0.75rem / var(--a11y-font-scale));
 }
 

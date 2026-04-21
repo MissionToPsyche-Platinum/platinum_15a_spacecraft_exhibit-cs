@@ -35,7 +35,7 @@
     border-radius: 30px;
 }
 
-.SP {
+.HE {
     position: absolute;
     width: 799px;
     height: 525px;
@@ -82,20 +82,10 @@
     top: 0px;
 }
 
-.SP .hd {
+.HE .hd {
     position: absolute;
-    width: 799px;
+    width: 560px;
     height: 522px;
-    left: 200px;
-
-    height: 522px;
-    left: 200px;
+    left: 120px;
     top: 0px;
-}
-
-.SP .hd {
-    position: absolute;
-    width: 799px;
-    height: 522px;
-    left: 225px;
 }

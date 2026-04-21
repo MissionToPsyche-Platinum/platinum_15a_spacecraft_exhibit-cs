@@ -25,7 +25,7 @@
 .buttonCGT,
 .buttonStar,
 .buttonSun,
-.buttonSP {
+.buttonHE {
     position: absolute;
     width: 379px;
     height: 101px;
@@ -60,7 +60,7 @@
     left: 1301px;
 }
 
-.buttonSP {
+.buttonHE {
     position: absolute;
     left: 1721px;
 }
