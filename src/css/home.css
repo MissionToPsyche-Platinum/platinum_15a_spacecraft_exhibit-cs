@@ -110,6 +110,12 @@ body.a11y-scaled .text1 {
     /* green */
     background: linear-gradient(178.81deg, #40FF00 -0.99%, #17D613 98.98%);
     border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    text-align: center;
 }
 
 .navigation {
@@ -121,6 +127,12 @@ body.a11y-scaled .text1 {
 
     background: linear-gradient(180deg, #00FFFF 0%, #00D9EA 42.63%, #00B6D6 100%);
     border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    text-align: center;
 }
 
 .video {
@@ -133,6 +145,12 @@ body.a11y-scaled .text1 {
     /* purple */
     background: linear-gradient(180deg, #D99AFF 0%, #CF80FF 24.48%, #C05AFF 100%);
     border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    text-align: center;
 }
 
 .communication {
@@ -144,6 +162,12 @@ body.a11y-scaled .text1 {
 
     background: linear-gradient(180deg, #FFC801 0%, #FFA601 39.51%);
     border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    text-align: center;
 }
 
 .spacecraft {
@@ -155,6 +179,12 @@ body.a11y-scaled .text1 {
 
     background: linear-gradient(180deg, #EF5965 0%, #E64B54 47.32%, #D32F33 100%);
     border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    text-align: center;
 }
 
 .model {
@@ -167,6 +197,12 @@ body.a11y-scaled .text1 {
     /* purple */
     background: linear-gradient(180deg, #D99AFF 0%, #CF80FF 24.48%, #C05AFF 100%);
     border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    text-align: center;
 }
 
 .science .bg {
@@ -222,6 +258,7 @@ body.a11y-scaled .text1 {
     text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.18);
 }
 
+/*
 .science .hd {
     position: absolute;
     left: 220px;
@@ -257,3 +294,5 @@ body.a11y-scaled .text1 {
     left: 190px;
     top: 243px;
 }
+
+*/
