@@ -10,7 +10,7 @@
     position: absolute;
     width: 750px;
     height: auto;
-    left: 1050px;
+    left: 1250px;
     top: 656px;
 }
 
@@ -23,12 +23,12 @@
 
 .text1 {
     position: absolute;
-    width: 350px;
+    width: 600px;
     padding: 0.75rem;
     box-sizing: border-box;
-    height: 400px;
-    left: 2075px;
-    top: 490px;
+    height: 300px;
+    left: 1400px;
+    top: 290px;
 
     font-family: 'Arial';
     font-style: normal;
