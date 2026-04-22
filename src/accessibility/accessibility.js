@@ -20,10 +20,12 @@
   var PANEL_ID      = 'a11y-panel';
   var TRIGGER_ID    = 'a11y-settings-trigger';
   var STATUS_ID     = 'a11y-status';
+  var IDLE_MS       = 120000; /* 2 minutes */
 
   /* ── State ──────────────────────────────────────────────────────────────── */
   var scaleIndex = parseInt(sessionStorage.getItem(STORAGE_SCALE) || '0', 10);
   var cvdOn      = sessionStorage.getItem(STORAGE_CVD) === 'true';
+  var idleTimer  = null;
 
   /* ── Init ───────────────────────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', function () {
@@ -32,6 +34,7 @@
     injectPanel();
     applyScale(scaleIndex, false);
     applyCvd(cvdOn, false);
+    startIdleReset();
   });
 
   /* ── Status region (aria-live, visually hidden) ─────────────────────────── */
@@ -241,6 +244,23 @@
     }
 
     updatePanelUI();
+  }
+
+  /* ── Idle reset ─────────────────────────────────────────────────────────── */
+  function startIdleReset() {
+    ['touchstart', 'click', 'mousemove', 'keydown'].forEach(function (evt) {
+      document.addEventListener(evt, resetIdleTimer, { passive: true, capture: true });
+    });
+    resetIdleTimer();
+  }
+
+  function resetIdleTimer() {
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(function () {
+      sessionStorage.removeItem(STORAGE_SCALE);
+      sessionStorage.removeItem(STORAGE_CVD);
+      window.location.href = 'index.html';
+    }, IDLE_MS);
   }
 
   /* ── Sync panel controls to current state ───────────────────────────────── */

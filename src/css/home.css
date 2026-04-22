@@ -73,7 +73,7 @@ button {
 .text1 {
     position: absolute;
     left: 260px;
-    top: 178px;
+    top: 161px;
     width: 725px;
     height: 1262px;
     border-radius: 30px;
@@ -105,7 +105,7 @@ body.a11y-scaled .text1 {
     width: 725px;
     height: 613px;
     left: 1025px;
-    top: 178px;
+    top: 161px;
 
     /* green */
     background: linear-gradient(178.81deg, #40FF00 -0.99%, #17D613 98.98%);
@@ -117,7 +117,7 @@ body.a11y-scaled .text1 {
     width: 724px;
     height: 613px;
     left: 1789px;
-    top: 178px;
+    top: 161px;
 
     background: linear-gradient(180deg, #00FFFF 0%, #00D9EA 42.63%, #00B6D6 100%);
     border-radius: 30px;
@@ -128,7 +128,7 @@ body.a11y-scaled .text1 {
     width: 724px;
     height: 613px;
     left: 1789px;
-    top: 178px;
+    top: 161px;
 
     /* purple */
     background: linear-gradient(180deg, #D99AFF 0%, #CF80FF 24.48%, #C05AFF 100%);
@@ -140,7 +140,7 @@ body.a11y-scaled .text1 {
     width: 725px;
     height: 613px;
     left: 1025px;
-    top: 827px;
+    top: 810px;
 
     background: linear-gradient(180deg, #FFC801 0%, #FFA601 39.51%);
     border-radius: 30px;
@@ -151,7 +151,7 @@ body.a11y-scaled .text1 {
     width: 724px;
     height: 613px;
     left: 1789px;
-    top: 827px;
+    top: 810px;
 
     background: linear-gradient(180deg, #EF5965 0%, #E64B54 47.32%, #D32F33 100%);
     border-radius: 30px;
@@ -162,7 +162,7 @@ body.a11y-scaled .text1 {
     width: 724px;
     height: 613px;
     left: 1789px;
-    top: 827px;
+    top: 810px;
 
     /* purple */
     background: linear-gradient(180deg, #D99AFF 0%, #CF80FF 24.48%, #C05AFF 100%);
