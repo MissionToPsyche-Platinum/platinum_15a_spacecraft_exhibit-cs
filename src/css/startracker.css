@@ -1,17 +1,17 @@
 /*COMMENT OUT = OG*/
 .img1 {
     position: absolute;
-    max-width: 900px;
+    max-width: 1400px;
     height: auto;
     left: 100px;
     top: 207px;
 }
 .img2 {
     position: absolute;
-    max-width: 1100px;
+    max-width: 400px;
     height: auto;
-    left: 1100px;
-    top: 257px; 
+    left: 1560px;
+    top: 407px; 
 }
 
 .img1 img,
