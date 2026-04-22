@@ -31,21 +31,21 @@
 }
 
 .learn-more {
-    margin-top: 600px;
+    margin-top: 650px;
     text-align: center;
     bottom: 0;
 
     color: white;
     background-color: transparent;
-    font-size: 60px;
+    font-size: 80px;
 
     animation: fade 4s linear infinite;
 }
 
 @keyframes fade {        
     0% { opacity: 1; }
-    40% { opacity: 0.3; }
-    60% { opacity: 0.3; }
+    40% { opacity: 0.15; }
+    60% { opacity: 0.15; }
     100% { opacity: 1; }
         
 }
