@@ -248,8 +248,8 @@ body.a11y-scaled .text1 {
 
     font-style: normal;
     font-weight: 700;
-        font-size: 2.15625rem; /* 69px */
-        line-height: 2.53125rem; /* 81px */
+    font-size: 2.15625rem; /* 69px */
+    line-height: 2.53125rem; /* 81px */
     display: flex;
     align-items: center;
     text-align: center;
