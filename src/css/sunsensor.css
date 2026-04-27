@@ -59,12 +59,12 @@ body.a11y-scaled .text1 {
     overflow-y: auto;
     padding-top: 0.5rem;
     position: absolute;
-    width: 700px;
+    width: 900px;
     padding: 0.75rem;
     box-sizing: border-box;
-    height: 723px;
-    left: 1840px;
-    top: 360px;
+    height: 350px;
+    left: 1540px;
+    top: 250px;
 
     font-family: 'Arial';
     font-style: normal;

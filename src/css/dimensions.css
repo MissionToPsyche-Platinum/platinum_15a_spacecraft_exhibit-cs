@@ -121,8 +121,8 @@
 
 /* Text 1 — left of left image, 5% (~96px) gap from left border and image */
 body.a11y-scaled .text1 {
-    left: 76px;
-    width: 365px;
+    left: 50px;
+    width: 400px;
     top: 205px;
     height: 835px;
     align-items: flex-start;
@@ -158,8 +158,8 @@ body.a11y-scaled .text3 {
 
 /* Text 4 — right of right image, 5% (~96px) gap from image and right border */
 body.a11y-scaled .text4 {
-    left: 2180px;
-    width: 370px;
+    left: 2150px;
+    width: 400px;
     top: 205px;
     height: 1045px;
     align-items: flex-start;

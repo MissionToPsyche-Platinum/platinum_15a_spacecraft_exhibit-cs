@@ -66,4 +66,5 @@ body.a11y-scaled p {
     display: flex;
     text-align: center;
     letter-spacing: 0.005em;
+    overflow-y: scroll;
 }
